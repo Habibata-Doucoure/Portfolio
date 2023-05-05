@@ -1,0 +1,197 @@
+
+/** {
+    margin: 0px;
+}*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap');
+
+
+
+
+body {
+    background-color:white;
+    margin-left: 15%;
+     scroll-behavior: smooth; /*permet au scroll de ne pas être brut, on a l'impression qu'un utilisateur fait la descente*/
+}
+
+
+.sidebar {
+    height:100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #F3945F;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+.sidebar div, a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+}
+
+nav, .accroche {    font-family: 'Roboto Serif';
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #DB8555;
+    margin-top: 10px;
+    gap: 10%;
+    text-shadow: 1px 1px 2px;
+
+}
+
+#presentation {
+    gap: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.me {
+    gap: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3, h4, p{
+    font-family: 'Roboto Serif';
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: black;
+    margin-top: 10px;
+}
+
+.titre-projet{
+    display: flex;
+    text-align: center;
+    padding:62px; /*m'a permis de centrer le texte dans la div*/
+    color: white;
+}
+
+.avatar {
+    background-image: url(./images/avatar-sans-background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 400px;
+    display: flex;
+    margin: auto;
+}
+
+button {
+    width: 200px;
+    border-radius: 10px;
+    margin: auto;
+    background-color:#F3945F;
+}
+
+.image-ordinateur{
+    background-image: url(images/images-ordi-portfolio.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    height: 400px; /*je donne une hauteur à la div pour qu'elle puisse contenir la photo*/
+    margin-bottom: 50px;
+
+}
+
+
+
+
+.frameworks,.outils, .developpement-web {
+    width: 150px;
+    height: 225px;
+    background-color: #F3945F;
+    border-radius: 5%;
+    margin: auto;
+    color: #ffff;
+    font-size: 15px;
+    display:flex;
+    justify-content: space-around;
+}
+
+/* .image-automne {
+    background-image: url(images/automne.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height:600px;
+    width: 1440px;
+} */
+
+
+
+.services, .groupe-portfolio{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    margin-bottom: 50px;;
+    flex-wrap: wrap;
+}
+
+.portfolio {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.groupe-portfolio{
+    display:flex;
+    gap : 30px;
+    max-width: 800px;
+
+}
+
+.projet {
+    width: 200px;
+    height: 200px;
+    background-image: url(images/wax-nav.jpg);
+    border-radius: 5%;
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.test  {
+    background-color: #F3945F;
+    height: 185px;
+    width: 185px;
+    margin:auto;
+
+}
+
+#email, #nom{
+ width: 400px;
+ height: 30px;
+ border-radius: 3%;
+}
+
+#message {
+    width: 400px;
+    height: 200px;
+    border-radius: 3%;
+}
+
+form {
+    display: flex;
+    gap: 5%;
+    margin: auto;
+    justify-content: space-around;
+    
+}
+
+.groupe2 {
+    display:flex;
+    gap: 15px;
+}
+
+
+
+
+
