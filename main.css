@@ -1,12 +1,14 @@
 
-/** {
-    margin: 0px;
-}*/
+/* * {
+    margin-left: 30px;
+} */
 
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300&display=swap');
 
 
-
+#all{
+    margin-left:20px;
+}
 
 body {
     background-color:white;
@@ -58,14 +60,34 @@ nav, .accroche {    font-family: 'Roboto Serif';
     display: flex;
     flex-direction: column;
 }
-
-h1, h2, h3, h4, p{
+.me-p {
+    display: flex;
+    margin-left: 30px;
+    font-size:20px;
+}
+#titre{
+    font-size: 35px;
     font-family: 'Roboto Serif';
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
     color: black;
     margin-top: 10px;
+}
+
+h2, h3, h4, p{
+    font-family: 'Roboto Serif';
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: black;
+    margin-top: 10px;
+    font-size:30px;
+    padding-top: 30px;
+}
+
+.p-competences{
+    font-size: 20px;
 }
 
 .titre-projet{
@@ -106,15 +128,16 @@ button {
 
 
 .frameworks,.outils, .developpement-web {
-    width: 150px;
+    width: 200px;
     height: 225px;
     background-color: #F3945F;
     border-radius: 5%;
-    margin: auto;
     color: #ffff;
-    font-size: 15px;
+    font-size: 20px;
     display:flex;
     justify-content: space-around;
+    text-align: center;
+    padding-top: 10px;
 }
 
 /* .image-automne {
@@ -180,15 +203,10 @@ button {
 
 form {
     display: flex;
+    flex-direction: column;
     gap: 5%;
     margin: auto;
-    justify-content: space-around;
-    
-}
-
-.groupe2 {
-    display:flex;
-    gap: 15px;
+    justify-content: space-between;
 }
 
 

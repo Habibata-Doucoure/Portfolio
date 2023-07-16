@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">  
+  
   <title>Portfolio Habibata</title>
 <link rel="stylesheet" type="text/css" href="main.css" >
 <script src="https://kit.fontawesome.com/fed48f3a84.js" crossorigin="anonymous"></script>
@@ -18,57 +19,53 @@
         <a href="#contact">Contact</a>
         <a href="#reseaux">Réseaux</a>
     </nav>
-
+<section id="all">
     <section id="presentation">
         <div class="me">
-            <h1>Habibata, développeuse Full stack</h1>
+            <h1 id="titre">Habibata, apprentie développeuse</h1>
         <div class="avatar"></div>
-        <p>Vous recherchez une développeuse? Vous êtes au bon endroit! Je vous propose mes services pour réaliser vos sites web et applications.
-            Ayant une formation de conceptrice développeuse d'applications, j'ai développé mes capacités de travail en groupe et en individuel.
-            Je me tiens à votre dispositon pour toute demande et répondrais à vos questions avec plaisir.
+        <p class="me-p">En reconversion professionelle, je suis actuellement à la recherche d'un stage, à partir se septembre, en Ile-De-France, en  tant 
+            que conceptrice déceloppeuse d'applications web et mobile.<br>
+            Je suis motivée et persévérante, j'ai aussi une expérience professionelle qui me permettra de m'intégrer
+            très facilement dans une équipe. J'ai appris à communiquer et l'importance de la communication et du partage
+            dans le travail en équipe.
         </p>
-        <button>Télécharger CV</button> 
         <div class="image-ordinateur"></div>
         
         </div>
     </section>
 
     <section id="competences">
-        <h2> Mes services </h2>
+        <h2> Mes compétences </h2>
         <div class="services">
             
             <div class="bloc-developpement">
-                <p>Developpement web</p>
+                <p class="p-competences">Developpement web</p>
                 <div class="developpement-web">
                     GIT, Github<br>
                     HTML, CSS (SASS, Flexbox)<br>
-                    JavaScript ECMAScript<br>
-                    PHP, MVC<br>
+                    JavaScript<br>
+                    PHP<br>
                     Python<br>
-                    SQL et NoSQL, MongoDB, JSON<br>
+                    SQL <br>
                     CRUD, API<br>
                 </div>
             </div>
 
             <div class="bloc-frameworks">
-                 <p>Frameworks</p>
+                 <p  class="p-competences">Frameworks</p>
                 <div class="frameworks">
                     Django<br>
-                    React<br>
                     Symfony<br>
                     Bootstrap<br>
-                    LAMP<br>
-                    MERN<br>
                 </div>
         </div>
            
         <div class="bloc-outils">
-            <p>Outils</p>
+            <p  class="p-competences">Outils</p>
             <div class="outils">
                 VSCode<br>
-                PyCharm<br>
                 PhpMyAdmin<br>
-                Postman<br>
                 Figma<br>
                 SCRUM<br>
                 KANBAN<br>
@@ -81,7 +78,7 @@
 
     <section id="portfolio">
         <div class="image-automne"></div>
-        <h3>Portfolio</h3>
+        <h2>Portfolio</h2>
         <div class="groupe-portfolio">
                 <div class="projet">
                     <div class="test">
@@ -100,52 +97,56 @@
                 </div>
                 <div class="projet">
                     <div class="test">
-                        <h1 class="titre-projet"></h1>
+                        <h1 class="titre-projet">Plateforme vidéo</h1>
                     </div>
                 </div>
                 <div class="projet">
                     <div class="test">
-                        <h1 class="titre-projet"></h1>
+                        <h1 class="titre-projet">Hackaton</h1>
                     </div>
                 </div>
                 <div class="projet">
                     <div class="test">
-                        <h1 class="titre-projet"></h1>
+                        <h1 class="titre-projet">Site sensibilisation violences </h1>
                     </div>
                 </div>
         </div>
     </section>
 
-
+<!-- Site utilisé pour recevoir les formulaires: formspree -->
     <section id="contact">
-        <h4>Contact</h4>
+        <h2>Contact</h2>
         <div class="bloc">
-            <form action="/page-traitement-donnees" method="post" class="formulaire">
-            <div class="groupe1">
-                <div class="nom-prenom">
-                    <label for="nom" >Nom et Prénom</label><br>
-                    <input type="text" id="nom" name="nom" placeholder="Nom et Prénom" required>
-                </div>
-
-                <div class="email">
-                    <label for="email">Email</label> <br>
-                    <input type="text" id="email" name="email" placeholder="Saisissez votre email" required>
-                </div>
-            </div>
-
-            <div class="groupe2">            
-                <div class="message">
-                    <label for="message">Message</label><br>
-                    <input type="text" id="message" name="message" placeholder="Saisissez votre message" required>
-                    <div class="formulaire">
-                        <input type="submit" value="Envoyer!">
-                      </div>
-                </div>
-            </div>
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xvojoenk"
+  method="POST"
+>
+<label>
+    Nom:
+    <textarea type="nom" name="nom"></textarea>
+  </label>
+  <label>
+    Prénom :
+    <textarea type="prenom" name="prenom"></textarea>
+  </label>
+  <div class="groupe2"></div>
+  <label>
+    Email :
+    <input type="email" name="email">
+  </label>
+  <label>
+    Message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Envoyer</button>
 </form>
 
-        </div>
     </section>
+</section>
+
+
 
 
 
