@@ -33,7 +33,7 @@ body {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: black;
+  color:white;
   display: block;
 }
 
@@ -84,7 +84,9 @@ h2, h3, h4, p{
     margin-top: 10px;
     font-size:30px;
     padding-top: 30px;
+    padding-bottom: 15px;
 }
+
 
 .p-competences{
     font-size: 20px;
@@ -95,6 +97,7 @@ h2, h3, h4, p{
     text-align: center;
     padding:62px; /*m'a permis de centrer le texte dans la div*/
     color: white;
+    font-size:20px;
 }
 
 .avatar {
@@ -201,15 +204,26 @@ button {
     border-radius: 3%;
 }
 
-form {
+/* form {
     display: flex;
     flex-direction: column;
     gap: 5%;
     margin: auto;
     justify-content: space-between;
-}
+} */
 
+.bloc {
+    display:flex;
 
+} 
 
+/* .contact-bloc1 {
+    display: flex;
+    flex-direction: column;
+} */
+
+/* .contact-bloc2 {
+display:flex;
+} */
 
 
